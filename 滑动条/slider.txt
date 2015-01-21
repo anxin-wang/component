@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/Public/static/lib/ion.rangeSlider/css/normalize.css" />
+    <link rel="stylesheet" href="/Public/static/lib/ion.rangeSlider/css/ion.rangeSlider.css"/>
+    <link rel="stylesheet" href="/Public/static/lib/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css" />
+<script src="/Public/static/lib/ion.rangeSlider/js/ion.rangeSlider.js"></script>
+
+
+
+            //¹¹½¨slider
+            var data_values=[
+                '2013.12',
+                '2014.1',
+                '2014.2',
+                '2014.3',
+                '2014.4',
+                '2014.5',
+                '2014.6',
+                '2014.7',
+                '2014.8',
+                '2014.9',
+                '2014.10',
+                '2014.11',
+                '2014.12',
+                '2015.1'
+            ]
+            $("#range").ionRangeSlider({
+                keyboard: true,
+                min: 0,
+                max: 5000,
+                from: 0,
+                values:data_values,
+                to: 4000,
+                type: 'single',
+                step: 1,
+                grid: true
+            });

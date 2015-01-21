@@ -1,0 +1,9 @@
+console.log($("#signupForm").rules("remove","captcha"))
+                	console.log($("#signupForm").rules("add",{captcha:{
+                            required: true,
+                            verifycode:{
+                                param:code
+                            }
+                        }}))
+
+
